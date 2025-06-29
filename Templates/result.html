@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liver Cirrhosis Prediction Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      text-align: center;
+      padding-top: 100px;
+      margin: 0;
+    }
+
+    .prediction-container {
+      background-color: #ffffff;
+      padding: 35px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      display: inline-block;
+    }
+
+    h2 {
+      color: darkgreen;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      text-decoration: none;
+      color: #fff;
+      background-color: green;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Result Display Box -->
+  <div class="prediction-container">
+    <h2>{{ prediction }}</h2>
+
+    <!-- Link to go back to form -->
+    <a class="back-link" href="/">Try Another Prediction</a>
+  </div>
+
+</body>
+</html>
